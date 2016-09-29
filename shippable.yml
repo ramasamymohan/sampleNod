@@ -27,18 +27,18 @@ build:
     - npm install
     - >
       if [[ "$BRANCH" == "master" ]];
-      then env_name = "pro";
-      echo env_name;
+      then $env_name = "pro";
+      echo $env_name;
       fi;
     - >
       if [[ "$BRANCH" == "dev" ]];
-      then env_name = "dev";
-      echo env_name;
+      then $env_name = "dev";
+      echo $env_name;
       fi;
     - >
       if [[ "$BRANCH" == "inno" ]];
-      then env_name = "inno";
-      echo env_name;
+      then $env_name = "inno";
+      echo $env_name;
       fi;
 
   post_ci:
