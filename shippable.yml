@@ -10,8 +10,6 @@ branches:
     - dev
     - inno
     - v*
-  except:
-    - master
 
 build:
   pre_ci_boot:
